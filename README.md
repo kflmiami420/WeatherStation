@@ -1,3 +1,5 @@
-# Project I
+# Weather station
 
-Repo voor Project 1 Bert Vanhaeke 1NMCT2
+The repository with all my code for my instructables guide on how to build a weatherstation with Python and Flask.
+
+By Bert Vanhaeke, 1st Year Student NMCT @ Howest Kortrijk, Belgium
