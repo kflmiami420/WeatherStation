@@ -21,9 +21,9 @@ mysql = MySQL(app)
 refreshdate = (datetime.today() - timedelta(1)).strftime('%Y-%m-%d')
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'project1-admin'
+app.config['MYSQL_DATABASE_USER'] = 'weatherstation-admin'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'adminpassword'
-app.config['MYSQL_DATABASE_DB'] = 'project1'
+app.config['MYSQL_DATABASE_DB'] = 'weatherstation'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 
 # session config
@@ -148,8 +148,8 @@ def updateforecastdata(manualmode=False, country='Belgium', postcode='1000'):
 
 
 def indexgatherer():
-    data = get_data('SELECT * FROM project1.sensordata order by `currentdatetime` desc limit 1')[0]
-    historydata = get_data('SELECT * FROM project1.history order by `currentdatetime` desc limit 5')
+    data = get_data('SELECT * FROM weatherstation.sensordata order by `currentdatetime` desc limit 1')[0]
+    historydata = get_data('SELECT * FROM weatherstation.history order by `currentdatetime` desc limit 5')
     username = session['username']
     userlocation = get_data('SELECT postcode,country FROM users where username=%s', (username))[0]
 
@@ -193,7 +193,7 @@ def indexh():
 def settings():
     username = session['username']
 
-    data = get_data('SELECT * FROM project1.sensordata order by `currentdatetime` desc limit 1')[0]
+    data = get_data('SELECT * FROM weatherstation.sensordata order by `currentdatetime` desc limit 1')[0]
     data2 = get_data('SELECT * FROM users where username=%s', (username))[0]
 
     weatherdata = [data[3], data[2], data[6], data[4], data[5]]

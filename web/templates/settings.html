@@ -179,11 +179,7 @@
 
     <script src="{{ url_for('static', filename='js/countries.js')}}"></script>
     <script type="text/javascript">
-        myVar = test({
-            {
-                settingdata | tojson
-            }
-        })
+        myVar = test({{settingdata | tojson}})
         filler = countryfiller(myVar)
     </script>
     {% if accepted %}

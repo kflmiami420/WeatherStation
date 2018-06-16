@@ -1,5 +1,5 @@
 import logging
-# import signal
+import signal
 from time import sleep
 import mysql.connector as mariadb
 from ADAFRUIT_BME280_LIBRARY import *
@@ -19,8 +19,8 @@ mcp = MCP3008.MCP3008()
 
 
 def get_data(sql, params=None):
-    conn = mariadb.connect(database='project1',
-                           user='project1-sensor', password='sensorpassword')
+    conn = mariadb.connect(database='weatherstation',
+                           user='weatherstation-sensor', password='sensorpassword')
     cursor = conn.cursor()
     records = []
 
@@ -43,7 +43,7 @@ def get_data(sql, params=None):
 def save_sensor_value(temperature_dht, humidity_dht, temperature_bmp, pressure_bmp, UV_si1145, windspeed):
     try:
         conn = mariadb.connect(
-            database='project1', user='project1-sensor', password='sensorpassword')
+            database='weatherstation', user='weatherstation-sensor', password='sensorpassword')
         cursor = conn.cursor()
         cursor.execute(
             "INSERT INTO sensordata (temperature_dht,humidity_dht, temperature_bmp, pressure_bmp,UV_si1145, windspeed) VALUES (%s, %s, %s, %s, %s, %s)", (temperature_dht, humidity_dht, temperature_bmp, pressure_bmp, UV_si1145, windspeed))
@@ -82,13 +82,13 @@ def loop():
     sleep(int(interval)*60)
 
 
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG)
-#     try:
-#         setup()
-#         log.debug('SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS')
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.DEBUG)
+    try:
+        setup()
+        log.debug('SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS')
 
-#         while running:
-#             loop()
-#     except KeyboardInterrupt:
-#         pass
+        while running:
+            loop()
+    except KeyboardInterrupt:
+        pass

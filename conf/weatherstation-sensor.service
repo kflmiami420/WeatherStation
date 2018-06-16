@@ -1,5 +1,5 @@
 [Unit]
-Description=Project 1 sensor service
+Description=Weatherstation sensor service
 After=network.target
 BindsTo=mysqld.service
 After=mysqld.service
