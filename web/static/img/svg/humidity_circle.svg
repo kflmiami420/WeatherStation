@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.783 39.783">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #83859e;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="humidity_circle" transform="translate(-111.109 -427.217)">
+    <g id="Ellipse_8" data-name="Ellipse 8" class="cls-1" transform="translate(111.109 427.217)">
+      <ellipse class="cls-3" cx="19.891" cy="19.891" rx="19.891" ry="19.891"/>
+      <ellipse class="cls-4" cx="19.891" cy="19.891" rx="18.891" ry="18.891"/>
+    </g>
+    <path id="water-percent" class="cls-2" d="M14,3.25s-8,9-8,14.333a8,8,0,0,0,16,0C22,12.25,14,3.25,14,3.25m3.293,8.96,1.413,1.413-8,8L9.293,20.21M11,12.25a1.667,1.667,0,1,1-1.667,1.667A1.667,1.667,0,0,1,11,12.25m6,6a1.667,1.667,0,1,1-1.667,1.667A1.667,1.667,0,0,1,17,18.25Z" transform="translate(116.689 432.732)"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Register</title>
+    <meta name="description" content="This is my HTML5 boilerplate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#4b4e6b">
+    <meta name="theme-color" content="#4b4e6b">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static',filename='site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url_for('static',filename='safari-pinned-tab.svg') }}" color="#4b4e6b">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css' )}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/screen.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class=" c-signup-body o-layout  o-layout--justify-center ">
+        <div>
+            <section class="o-layout--justify-center ">
+                <div class="o-layout__item o-layout o-layout--justify-center">
+                    <div class="c-signup-logo "></div>
+                </div>
+                <form action="" method="POST">
+                    <div class="c-signup-panel o-row ">
+
+                        <h3>Registreren</h3>
+
+                        <div class="o-layout o-layout--justify-center o-layout--gutter-lg">
+                            <div class="u-1-of-4-bp2">
+                                <label for="username">
+                                    <h4>Username</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+                                <input type="text" name="username" id="username">
+                            </div>
+                        </div>
+                        <div class="o-layout o-layout--justify-center o-layout--gutter-lg">
+                            <div class="u-1-of-4-bp2 o-layout__item">
+                                <label for="username">
+                                    <h4>E-Mail</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class=" o-layout o-layout--justify-center o-layout--gutter-lg">
+                            <div class="u-1-of-4-bp2">
+                                <label for="password">
+                                    <h4>Password</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+                                <input type="password" name="password" id="password ">
+                            </div>
+                        </div>
+
+                        <button type="submit" name='submit' value='Register' class="c-signup-btn">Registreer</button>
+
+                    </div>
+
+                </form>
+        </div>
+    </div>
+    </section>
+</body>

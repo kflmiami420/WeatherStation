@@ -1,3 +1,3 @@
-# Weather station
-Weatherstation I decided to make as an assignment for school.
-You can find more info about the project on instructables :
+# Project I
+
+Repo voor Project 1 Bert Vanhaeke 1NMCT2

@@ -1,0 +1,1479 @@
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: 700;
+    src: url("../fonts/WorkSans-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: 400;
+    src: url("../fonts/WorkSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: 300;
+    src: url("../fonts/WorkSans-Light.ttf") format("ttf");
+}
+
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+
+/*
+    Generic: Page
+    ---
+    Global page styles + universal box-sizing:
+*/
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Work Sans", Helvetica, arial, sans-serif;
+    color: #111;
+    font-weight: 300;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #e85e00;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background: rgb(86, 102, 245);
+    color: white;
+    text-shadow: none;
+}
+
+/*------------------------------------*\
+  #Elements
+\*------------------------------------*/
+
+label {
+    display: inline;
+}
+
+.regular-checkbox {
+    display: none;
+}
+
+.regular-checkbox+label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox+label:active,
+.regular-checkbox:checked+label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.regular-checkbox:checked+label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+
+/*
+    Elements: Images
+    ---
+    Default markup for images to make them responsive
+*/
+
+img {
+    max-width: 100%;
+    /* vertical-align: top; */
+}
+
+/*
+    Elements: typography
+    ---
+    Default markup for typographic elements
+*/
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 24px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 31px;
+        margin: 0px;
+    }
+}
+
+/* 
+@media (min-width:1200px) {
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0px;
+    }
+    h4 {}
+} */
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+    margin: 0 0 24px;
+}
+
+ul,
+ol {
+    padding-left: 24px;
+}
+
+li ul,
+li ol {
+    margin-bottom: 0;
+}
+
+blockquote {
+    font-style: normal;
+    font-size: 23px;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
+blockquote * {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figcaption {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: LightGrey;
+    margin: 0 0 24px;
+}
+
+/* a {
+    color: white;
+    transition: all .1s ease-in-out;
+} */
+
+/* a:visited,
+a:active {
+    color: white;
+}
+
+a:hover,
+a:focus {
+    color: #0095FF;
+} */
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+.o-row {
+    position: relative;
+    padding: 24px 24px 0;
+}
+
+/* color modifiers */
+
+/* specific modifiers */
+
+@media (min-width: 768px) {
+    .o-row {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    .o-row--xl {
+        padding-top: 96px;
+        padding-bottom: 72px;
+    }
+}
+
+@media (min-width:1200px) {
+    .o-row {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90em;
+    /* 90 * 16px = 1440px */
+}
+
+/*
+    Objects: section
+    ---
+    Creates vertical whitespace between adjacent sections inside a row
+*/
+
+.o-section {
+    position: relative;
+}
+
+.o-section+.o-section {
+    padding-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .o-section--lg+.o-section--lg,
+    .o-section--xl+.o-section--xl {
+        padding-top: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    .o-section--xl+.o-section--xl {
+        padding-top: 72px;
+    }
+}
+
+/*
+    Objects: Layout
+    ---
+    The layout object provides us with a column-style layout system. This object
+    contains the basic structural elements, but classes should be complemented
+    with width utilities
+*/
+
+.o-layout {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.o-layout__item {
+    width: 100%;
+}
+
+/* gutter modifiers, these affect o-layout__item too */
+
+.o-layout--gutter {
+    margin: 0 -12px;
+}
+
+.o-layout--gutter>.o-layout__item {
+    padding: 0 12px;
+}
+
+.o-layout--gutter-sm {
+    margin: 0 -6px;
+}
+
+.o-layout--gutter-sm>.o-layout__item {
+    padding: 0 6px;
+}
+
+.o-layout--gutter-lg {
+    margin: 0 -24px;
+}
+
+.o-layout--gutter-lg>.o-layout__item {
+    padding: 0 24px;
+}
+
+.o-layout--gutter-xl {
+    margin: 0 -48px;
+}
+
+.o-layout--gutter-xl>.o-layout__item {
+    padding: 0 48px;
+}
+
+/* reverse horizontal row modifier */
+
+.o-layout--row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Horizontal alignment modifiers*/
+
+.o-layout--justify-start {
+    justify-content: flex-start;
+}
+
+.o-layout--justify-end {
+    justify-content: flex-end;
+}
+
+.o-layout--justify-center {
+    justify-content: center;
+}
+
+.o-layout--justify-space-around {
+    justify-content: space-around;
+}
+
+.o-layout--justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.o-layout--justify-space-between {
+    justify-content: space-between;
+}
+
+/* Vertical alignment modifiers */
+
+.o-layout--align-start {
+    align-items: flex-start;
+}
+
+.o-layout--align-end {
+    align-items: flex-end;
+}
+
+.o-layout--align-center {
+    align-items: center;
+}
+
+.o-layout--align-baseline {
+    align-items: baseline;
+}
+
+/* Vertical alignment modifiers that only work if there is one than one flex item */
+
+.o-layout--align-content-start {
+    align-content: start;
+}
+
+.o-layout--align-content-end {
+    align-content: end;
+}
+
+.o-layout--align-content-center {
+    align-content: center;
+}
+
+.o-layout--align-content-space-around {
+    align-content: space-around;
+}
+
+.o-layout--align-content-space-between {
+    align-content: space-between;
+}
+
+/*
+    Objects: List
+    ---
+    Small reusable object to remove default list styling from lists
+*/
+
+.o-list {
+    list-style: none;
+    padding: 0;
+}
+
+/*
+    Object: Button reset
+    ---
+    Small button reset object
+*/
+
+.o-button-reset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+.c-logo {
+    width: 60px;
+    display: block;
+    margin-left: 10px;
+}
+
+.c-card {
+    width: 100%;
+    margin-bottom: 48px;
+    background-color: #F2F3F7;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.c-card__inner {
+    margin-top: 10px;
+}
+
+.c-card__date-out {
+    width: 100%;
+}
+
+.c-card__date {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.c-card__text {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.c-card__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    filter: drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.16));
+}
+
+.c-header__logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.c-header__outer {
+    width: auto;
+    height: 296px;
+    background-color: #4B4E6B;
+    display: flex;
+    z-index: -10000;
+}
+
+.c-header__outer-thin {
+    width: auto;
+    height: 100;
+    background-color: #4B4E6B;
+    display: flex;
+    z-index: -10000;
+    padding-bottom: 24px;
+}
+
+.c-header__inner {
+    width: 100%;
+    margin: 16px 0 16px;
+    max-width: 1016px;
+    height: 160px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.c-headersegment {
+    width: 45%;
+}
+
+.c-header__innertext {
+    font-weight: 400;
+}
+
+.c-header__text {
+    text-align: center;
+    font-weight: 300 !important;
+    color: white;
+    width: 100%;
+    height: 60px;
+}
+
+.c-header__subtext {
+    text-align: center;
+    font-weight: 400 !important;
+    width: 100%;
+}
+
+.c-chart__legendbox {
+    margin-left: 10px;
+    margin-top: 12px;
+    height: 24px;
+    color: rgb(244, 232, 128)
+}
+
+.c-chart__legendtext {
+    font-weight: 400;
+    margin: 10px 10px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.c-signup-body {
+    background-color: #4B4E6B;
+    height: 100vh;
+}
+
+.c-signup-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url(../img/svg/logo_notext.svg
+);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.c-signup-btn {
+    background-color: #4B4E6B;
+    color: white;
+    border-radius: 10px;
+    width: 160px;
+    height: 32px;
+    text-decoration: none;
+    margin-top: 50px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.c-signup-panel {
+    background-color: white;
+    border-radius: 5px;
+    width: 95%;
+    padding-bottom: 35px;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+    text-align: center;
+}
+
+.c-signup-panel>h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    /* font-size: 26px; */
+    line-height: 30px;
+}
+
+.c-signup-panel h3 {
+    font-weight: 400;
+    /* font-size: 20px;
+    line-height: 24px; */
+}
+
+.c-signup-panel h4 {
+    font-weight: 400;
+}
+
+.c-signup-panel div {
+    margin-top: 12px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 5px;
+    width: 225px;
+    font-family: "Work Sans", Helvetica, arial, sans-serif;
+}
+
+.c-settings-input {
+    border: 0px !important;
+    border-bottom: 1px solid #C2C2C2 !important;
+    font-size: 20px;
+    background: transparent;
+    fill: none;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    text-align: center;
+}
+
+.c-settings-input:focus {
+    border: 0px;
+    border-bottom: 1px solid #C2C2C2;
+    outline: none;
+    background: transparent;
+    fill: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.c-roundedicon {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin-top: -49px;
+    z-index: 1000;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.c-settings-block+.c-settings-block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.c-settings-block {
+    background-color: #F2F3F7;
+    height: 325px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+}
+
+.c-settings__statusindicator {
+    width: 25px;
+    height: 25px;
+}
+
+.c-settings__statusindicator img {
+    vertical-align: middle
+}
+
+.c-settings__statustext {
+    margin-bottom: 22px;
+}
+
+.c-settings-block h3 {
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+    .c-header__innertext {
+        width: 60%;
+    }
+    .c-header__text {
+        height: 30px;
+    }
+}
+
+@media(min-width:768px) {
+    .c-card__date {
+        margin-bottom: 0px;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .c-card__text {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    .c-header__inner {
+        width: 100%;
+        max-width: 1016px;
+        height: 64px;
+    }
+    .c-chart__legendtext {
+        font-size: 16px;
+    }
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        margin-left: 15px;
+    }
+    .c-signup-logo {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+        background-color: white;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-image: url(../img/svg/logo_big.svg);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+    .c-signup-panel {
+        background-color: white;
+        border-radius: 5px;
+        height: 100%;
+        width: 564px;
+        margin-top: 0px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+        text-align: center;
+    }
+    .c-signup-panel div {
+        margin-top: 25px;
+    }
+    .c-settings-block {
+        padding: 36px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 998px) {
+    h2+.c-header__inner {
+        margin: -50px 50px 0 50px;
+    }
+    .c-header__inner {
+        width: 100%;
+        max-width: 1016px;
+        height: 64px;
+    }
+    .c-headersegment {
+        width: 20%;
+    }
+    .c-header__text {
+        margin-top: 24px;
+    }
+    .c-card {
+        height: 208px;
+        max-width: 166px;
+        padding: 25px 10px;
+    }
+    .c-card__date {
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 8px;
+        margin-top: 0px;
+    }
+    .c-signup-logo {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+        margin-top: 50px;
+        margin-bottom: 96px;
+    }
+    .c-signup-panel {
+        height: 100%;
+    }
+    .c-signup-panel h3 {
+        font-weight: 300;
+        margin-bottom: 36px;
+        margin-top: 25px;
+        /* font-size: 32px;
+        line-height: 37px; */
+    }
+    .c-signup-panel h4 {
+        font-weight: 400;
+    }
+    .c-signup-panel div {
+        margin-top: 16px;
+    }
+    .c-settings-block {
+        padding: 48px;
+        height: 400px;
+    }
+    .c-settings-block+.c-settings-block {
+        margin-top: 0px;
+        margin-left: 72px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .c-card__text {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .c-card__date {
+        margin-bottom: 15px;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .c-card {
+        height: 266px;
+        max-width: 236px;
+        padding: 25px 20px;
+    }
+    .c-card__logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        filter: drop-shadow( 0 3px 6px rgba(0, 0, 0, 0.16));
+    }
+    .c-chart__legendtext {
+        font-style: 18px;
+    }
+    .c-signup-panel {
+        height: 420px;
+        width: 564px;
+    }
+}
+
+.c-swapbtn {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 8px;
+    background: white;
+    text-decoration: none;
+    color: #656565;
+    border: solid #65656579 1px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    /* border: solid 1px rgba(142, 199, 255, 0.2); */
+}
+
+.c-swapbtn+.c-swapbtn {
+    margin-left: 24px;
+}
+
+.c-swapbtn__inactive {
+    color: #65656570;
+    border: solid #65656570 1px;
+    box-shadow: none;
+}
+
+.c-swapbtn:hover {
+    font-weight: 500;
+    border: solid #4B4E6B 1px;
+    cursor: pointer;
+    color: #4B4E6B;
+    /* change the direction of the change here */
+}
+
+.c-chart__outer {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 48px;
+    background-color: #F2F3F7;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*
+    Component: Lead
+    ---
+    Lead type treatments to style everything that differs from standard typography elements
+*/
+
+.c-lead {
+    font-weight: 200;
+}
+
+.c-lead--md {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-lead--lg {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.c-lead--xl {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.c-lead--xxl {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.c-lead--xxxl {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@media (min-width: 768px) {
+    .c-lead--md {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .c-lead--lg {
+        font-size: 29px;
+        line-height: 40px;
+    }
+    .c-lead--xl {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .c-lead--xxl {
+        font-size: 52px;
+        line-height: 64px;
+        font-weight: 700;
+    }
+    .c-lead--xxxl {
+        font-size: 52px;
+        line-height: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .c-lead--lg {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .c-lead--xl {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .c-lead--xxl {
+        font-size: 66px;
+        line-height: 80px;
+        font-weight: 700;
+    }
+    .c-lead--xxxl {
+        font-size: 66px;
+        line-height: 72px;
+    }
+}
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+
+/*
+    Utilities: color
+    ---
+    Utility classes to put specific colors onto elements
+*/
+
+.u-color-neutral-base {
+    color: #7C7E80;
+}
+
+.u-text-head {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+}
+
+/*
+    Utilities: Text alignment
+    ---
+    Text  alignment utitlieties
+*/
+
+.u-text-align-center {
+    text-align: center;
+}
+
+.u-text-align-center-small {
+    text-align: center;
+}
+
+.u-hide-mobile {
+    display: none;
+}
+
+.u-legend-alligment {
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .u-legend-alligment {
+        justify-content: start
+    }
+}
+
+@media (min-width: 768px) {
+    .u-text-align-center-small {
+        text-align: left;
+    }
+    .u-hide-mobile {
+        display: block;
+    }
+}
+
+.u-hide-desktop {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .u-hide-desktop {
+        display: none;
+    }
+}
+
+/*
+    Utilities: spacing
+    ---
+    Utility classes to put specific margins and paddings onto elements
+*/
+
+.u-pt-clear {
+    padding-top: 0 !important;
+}
+
+.u-mb-clear {
+    margin-bottom: 0 !important;
+}
+
+.u-mb-xs {
+    margin-bottom: 4px !important;
+}
+
+.u-mb-sm {
+    margin-bottom: 8px !important;
+}
+
+.u-mb-md {
+    margin-bottom: 16px !important;
+}
+
+.u-mb-lg {
+    margin-bottom: 32px !important;
+}
+
+.u-mb-xl {
+    margin-bottom: 48px !important;
+}
+
+.u-pdn-lg {
+    padding-top: 48px;
+}
+
+.u-pdn-xl {
+    padding-top: 72px;
+}
+
+.u-pdn-xl__bottom {
+    padding-bottom: 72px;
+}
+
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements
+*/
+
+.u-max-width-xs {
+    max-width: 18em !important;
+}
+
+.u-max-width-sm {
+    max-width: 25em !important;
+}
+
+.u-max-width-md {
+    max-width: 30em !important;
+}
+
+.u-max-width-lg {
+    max-width: 60em !important;
+}
+
+.u-max-width-xl {
+    max-width: 75em !important;
+}
+
+.u-max-width-none {
+    max-width: none !important;
+}
+
+@media (min-width: 768px) {
+    .u-max-width-md {
+        max-width: 33em !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-max-width-md {
+        max-width: 46em !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-max-width-md {
+        max-width: 50em !important;
+    }
+}
+
+/*
+    Utility: Widths
+    ---
+    Utility classes to put specific widths onto elements
+    Will be mostly used on o-layout__item
+*/
+
+.u-width-auto {
+    width: auto !important;
+}
+
+.u-1-of-2 {
+    width: 50% !important;
+}
+
+.u-1-of-3 {
+    width: 33.3333333333% !important;
+}
+
+.u-2-of-3 {
+    width: 66.6666666667% !important;
+}
+
+.u-1-of-4 {
+    width: 25% !important;
+}
+
+.u-3-of-4 {
+    width: 75% !important;
+}
+
+.u-1-of-5 {
+    width: 20% !important;
+}
+
+.u-2-of-5 {
+    width: 40% !important;
+}
+
+.u-3-of-5 {
+    width: 60% !important;
+}
+
+.u-4-of-5 {
+    width: 80% !important;
+}
+
+.u-1-of-6 {
+    width: 16.6666666667% !important;
+}
+
+.u-5-of-6 {
+    width: 83.3333333333% !important;
+}
+
+.u-45 {
+    width: 45% !important;
+}
+
+.u-reset {
+    width: 100% !important;
+}
+
+@media (min-width: 576px) {
+    .u-1-of-2-bp1 {
+        width: 50% !important;
+    }
+    .u-1-of-3-bp1 {
+        width: 33.3333333333% !important;
+    }
+    .u-2-of-3-bp1 {
+        width: 66.6666666667% !important;
+    }
+    .u-1-of-4-bp1 {
+        width: 25% !important;
+    }
+    .u-3-of-4-bp1 {
+        width: 75% !important;
+    }
+    .u-1-of-5-bp1 {
+        width: 20% !important;
+    }
+    .u-2-of-5-bp1 {
+        width: 40% !important;
+    }
+    .u-3-of-5-bp1 {
+        width: 60% !important;
+    }
+    .u-4-of-5-bp1 {
+        width: 80% !important;
+    }
+    .u-1-of-6-bp1 {
+        width: 16.6666666667% !important;
+    }
+    .u-5-of-6-bp1 {
+        width: 83.3333333333% !important;
+    }
+    .u-reset-bp1 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .u-width-auto-bp2 {
+        width: auto !important;
+    }
+    .u-1-of-2-bp2 {
+        width: 50% !important;
+    }
+    .u-1-of-3-bp2 {
+        width: 33.3333333333% !important;
+    }
+    .u-2-of-3-bp2 {
+        width: 66.6666666667% !important;
+    }
+    .u-1-of-4-bp2 {
+        width: 25% !important;
+    }
+    .u-3-of-4-bp2 {
+        width: 75% !important;
+    }
+    .u-1-of-5-bp2 {
+        width: 20% !important;
+    }
+    .u-2-of-5-bp2 {
+        width: 40% !important;
+    }
+    .u-3-of-5-bp2 {
+        width: 60% !important;
+    }
+    .u-4-of-5-bp2 {
+        width: 80% !important;
+    }
+    .u-1-of-6-bp2 {
+        width: 16.6666666667% !important;
+    }
+    .u-5-of-6-bp2 {
+        width: 83.3333333333% !important;
+    }
+    .u-reset-bp2 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-1-of-2-bp3 {
+        width: 50% !important;
+    }
+    .u-1-of-3-bp3 {
+        width: 33.3333333333% !important;
+    }
+    .u-2-of-3-bp3 {
+        width: 66.6666666667% !important;
+    }
+    .u-1-of-4-bp3 {
+        width: 25% !important;
+    }
+    .u-3-of-4-bp3 {
+        width: 75% !important;
+    }
+    .u-1-of-5-bp3 {
+        width: 20% !important;
+    }
+    .u-2-of-5-bp3 {
+        width: 40% !important;
+    }
+    .u-3-of-5-bp3 {
+        width: 60% !important;
+    }
+    .u-4-of-5-bp3 {
+        width: 80% !important;
+    }
+    .u-1-of-6-bp3 {
+        width: 16.6666666667% !important;
+    }
+    .u-5-of-6-bp3 {
+        width: 83.3333333333% !important;
+    }
+    .u-reset-bp3 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-2-bp4 {
+        width: 50% !important;
+    }
+    .u-1-of-3-bp4 {
+        width: 33.3333333333% !important;
+    }
+    .u-2-of-3-bp4 {
+        width: 66.6666666667% !important;
+    }
+    .u-1-of-4-bp4 {
+        width: 25% !important;
+    }
+    .u-3-of-4-bp4 {
+        width: 75% !important;
+    }
+    .u-1-of-5-bp4 {
+        width: 20% !important;
+    }
+    .u-2-of-5-bp4 {
+        width: 40% !important;
+    }
+    .u-3-of-5-bp4 {
+        width: 60% !important;
+    }
+    .u-4-of-5-bp4 {
+        width: 80% !important;
+    }
+    .u-1-of-6-bp4 {
+        width: 16.6666666667% !important;
+    }
+    .u-5-of-6-bp4 {
+        width: 83.3333333333% !important;
+    }
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

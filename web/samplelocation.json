@@ -1,0 +1,818 @@
+[{
+        "Version": 1,
+        "Key": "522673_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Balneario Massini",
+        "EnglishName": "Balneario Massini",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -41.05,
+            "Longitude": -62.85,
+            "Elevation": {
+                "Metric": {
+                    "Value": 20,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 67,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522674_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "El Dique",
+        "EnglishName": "El Dique",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.894,
+            "Longitude": -63.167,
+            "Elevation": {
+                "Metric": {
+                    "Value": 9,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 29,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522675_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "General Liborio Bernal",
+        "EnglishName": "General Liborio Bernal",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.833,
+            "Longitude": -63.65,
+            "Elevation": {
+                "Metric": {
+                    "Value": 70,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 229,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522676_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "La Meseta",
+        "EnglishName": "La Meseta",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.894,
+            "Longitude": -63.167,
+            "Elevation": {
+                "Metric": {
+                    "Value": 9,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 29,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522677_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Mata Negra",
+        "EnglishName": "Mata Negra",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.894,
+            "Longitude": -63.167,
+            "Elevation": {
+                "Metric": {
+                    "Value": 9,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 29,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522678_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Ruta 3 Kilometro 974",
+        "EnglishName": "Ruta 3 Kilometro 974",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.894,
+            "Longitude": -63.167,
+            "Elevation": {
+                "Metric": {
+                    "Value": 9,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 29,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "522679_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Viedma",
+        "EnglishName": "Viedma",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "SAM",
+            "LocalizedName": "South America",
+            "EnglishName": "South America"
+        },
+        "Country": {
+            "ID": "AR",
+            "LocalizedName": "Argentina",
+            "EnglishName": "Argentina"
+        },
+        "AdministrativeArea": {
+            "ID": "R",
+            "LocalizedName": "Rio Negro",
+            "EnglishName": "Rio Negro",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "AR"
+        },
+        "TimeZone": {
+            "Code": "ART",
+            "Name": "America/Argentina/Salta",
+            "GmtOffset": -3,
+            "IsDaylightSaving": false,
+            "NextOffsetChange": null
+        },
+        "GeoPosition": {
+            "Latitude": -40.8,
+            "Longitude": -63,
+            "Elevation": {
+                "Metric": {
+                    "Value": 45,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 149,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "415379_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Kortrijk",
+        "EnglishName": "Kortrijk",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "BE",
+            "LocalizedName": "Belgium",
+            "EnglishName": "Belgium"
+        },
+        "AdministrativeArea": {
+            "ID": "VWV",
+            "LocalizedName": "West Flanders",
+            "EnglishName": "West Flanders",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "BE"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Brussels",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 50.828,
+            "Longitude": 3.265,
+            "Elevation": {
+                "Metric": {
+                    "Value": 16,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 51,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts",
+            "MinuteCast"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "492893_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Ajtos",
+        "EnglishName": "Ajtos",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "BG",
+            "LocalizedName": "Bulgaria",
+            "EnglishName": "Bulgaria"
+        },
+        "AdministrativeArea": {
+            "ID": "02",
+            "LocalizedName": "Burgas",
+            "EnglishName": "Burgas",
+            "Level": 1,
+            "LocalizedType": "District",
+            "EnglishType": "District",
+            "CountryID": "BG"
+        },
+        "TimeZone": {
+            "Code": "EEST",
+            "Name": "Europe/Sofia",
+            "GmtOffset": 3,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 42.7,
+            "Longitude": 27.25,
+            "Elevation": {
+                "Metric": {
+                    "Value": 147,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 482,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "406914_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Frauenfeld",
+        "EnglishName": "Frauenfeld",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "CH",
+            "LocalizedName": "Switzerland",
+            "EnglishName": "Switzerland"
+        },
+        "AdministrativeArea": {
+            "ID": "TG",
+            "LocalizedName": "Thurgovia",
+            "EnglishName": "Thurgovia",
+            "Level": 1,
+            "LocalizedType": "Canton",
+            "EnglishType": "Canton",
+            "CountryID": "CH"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Zurich",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 47.56,
+            "Longitude": 8.904,
+            "Elevation": {
+                "Metric": {
+                    "Value": 401,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 1317,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts",
+            "MinuteCast"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "406915_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Gerlikon",
+        "EnglishName": "Gerlikon",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "CH",
+            "LocalizedName": "Switzerland",
+            "EnglishName": "Switzerland"
+        },
+        "AdministrativeArea": {
+            "ID": "TG",
+            "LocalizedName": "Thurgovia",
+            "EnglishName": "Thurgovia",
+            "Level": 1,
+            "LocalizedType": "Canton",
+            "EnglishType": "Canton",
+            "CountryID": "CH"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Zurich",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 47.535,
+            "Longitude": 8.88,
+            "Elevation": {
+                "Metric": {
+                    "Value": 525,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 1724,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts",
+            "MinuteCast"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "412153_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Grenaa",
+        "EnglishName": "Grenaa",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "DK",
+            "LocalizedName": "Denmark",
+            "EnglishName": "Denmark"
+        },
+        "AdministrativeArea": {
+            "ID": "82",
+            "LocalizedName": "Central Jutland",
+            "EnglishName": "Central Jutland",
+            "Level": 1,
+            "LocalizedType": "Region",
+            "EnglishType": "Region",
+            "CountryID": "DK"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Copenhagen",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 56.416,
+            "Longitude": 10.878,
+            "Elevation": {
+                "Metric": {
+                    "Value": 5,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 16,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts",
+            "MinuteCast"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "496858_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Papa",
+        "EnglishName": "Papa",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "HU",
+            "LocalizedName": "Hungary",
+            "EnglishName": "Hungary"
+        },
+        "AdministrativeArea": {
+            "ID": "VE",
+            "LocalizedName": "Veszprém",
+            "EnglishName": "Veszprém",
+            "Level": 1,
+            "LocalizedType": "County",
+            "EnglishType": "County",
+            "CountryID": "HU"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Budapest",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 47.333,
+            "Longitude": 17.467,
+            "Elevation": {
+                "Metric": {
+                    "Value": 143,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 470,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts"
+        ]
+    },
+    {
+        "Version": 1,
+        "Key": "406916_PC",
+        "Type": "PostalCode",
+        "Rank": 500,
+        "LocalizedName": "Joure",
+        "EnglishName": "Joure",
+        "PrimaryPostalCode": "8500",
+        "Region": {
+            "ID": "EUR",
+            "LocalizedName": "Europe",
+            "EnglishName": "Europe"
+        },
+        "Country": {
+            "ID": "NL",
+            "LocalizedName": "Netherlands",
+            "EnglishName": "Netherlands"
+        },
+        "AdministrativeArea": {
+            "ID": "FR",
+            "LocalizedName": "Friesland",
+            "EnglishName": "Friesland",
+            "Level": 1,
+            "LocalizedType": "Province",
+            "EnglishType": "Province",
+            "CountryID": "NL"
+        },
+        "TimeZone": {
+            "Code": "CEST",
+            "Name": "Europe/Amsterdam",
+            "GmtOffset": 2,
+            "IsDaylightSaving": true,
+            "NextOffsetChange": "2018-10-28T01:00:00Z"
+        },
+        "GeoPosition": {
+            "Latitude": 52.966,
+            "Longitude": 5.803,
+            "Elevation": {
+                "Metric": {
+                    "Value": 1,
+                    "Unit": "m",
+                    "UnitType": 5
+                },
+                "Imperial": {
+                    "Value": 3,
+                    "Unit": "ft",
+                    "UnitType": 0
+                }
+            }
+        },
+        "IsAlias": false,
+        "SupplementalAdminAreas": [
+
+        ],
+        "DataSets": [
+            "Alerts",
+            "MinuteCast"
+        ]
+    }
+]

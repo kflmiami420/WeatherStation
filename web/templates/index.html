@@ -1,0 +1,559 @@
+{% extends "base.html" %}
+{% block title%}
+Blue Cloud Home
+{% endblock %}
+{% block location%}
+{{locationname}}
+{% endblock %}
+
+ {% block cards %}
+<div class="o-container">
+    <div class="o-row o-layout o-layout--justify-center">
+    
+        {% if history %}
+        <a class="c-swapbtn u-1-of-5-bp4 u-45 u-2-of-5-bp2 u-1-of-4-bp3 c-swapbtn__inactive" href="{{ url_for('index') }}">
+            Voorspellingen
+        </a>
+        <a class="c-swapbtn u-1-of-5-bp4 u-45 u-2-of-5-bp2 u-1-of-4-bp3 " href="{{ url_for('indexh') }}">
+            Historiek
+        </a>  
+        {% else %}
+        <a class="c-swapbtn u-1-of-5-bp4 u-45 u-2-of-5-bp2 u-1-of-4-bp3 " href="{{ url_for('index') }}">
+            Voorspellingen
+        </a>
+        <a class="c-swapbtn u-1-of-5-bp4 u-45 u-2-of-5-bp2 u-1-of-4-bp3 c-swapbtn__inactive" href="{{ url_for('indexh') }}">
+            Historiek
+        </a>  
+         {% endif %}
+
+    </div>
+    <div class="o-row o-layout o-layout--justify-space-between">
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CARD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="c-card__date-out u-hide-desktop">
+         {% if history %}
+        <h3 class="c-card__text">{{historydata[0][0]}}</h3>
+        {% else %}
+        <h3 class="c-card__text">{{forecastdata[0][0]}}</h3>
+        {% endif %}
+
+
+        </div>
+        <div class="c-card u-1-of-5-bp4">
+
+            <div class="o-layout o-layout--justify-space-between">
+                <div class="u-hide-mobile  o-layout o-layout--align-center o-layout--justify-center u-reset-bp3  u-1-of-4 u-reset-bp3">
+                    {% if history %}
+                    <h3 class="c-card__date">{{historydata[0][0]}}
+                    {% else %}
+                    <h3 class="c-card__date">{{forecastdata[0][0]}}
+                    {% endif %}
+                    </h3>
+                </div>
+
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center   ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/temperature_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[0][1]|round(1,'floor')}}</h2>
+                    {% else %}
+                    <h2 class="c-card__text">{{forecastdata[0][2]|round(1,'floor')}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;°C</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    {% if history %}
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/humidity_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{historydata[0][2]|round}}</h2>
+                    {% else %}                    
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/rainfall_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{forecastdata[0][3]|round}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;%</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/windspeed_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[0][3]|round(1,'floor')}}</h2>
+                    {% else %}     
+                    <h2 class="c-card__text">{{forecastdata[0][4]|round(1,'floor')}}</h2>   
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;km/h</h3>
+                </div>
+            </div>
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CARD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="c-card u-1-of-5-bp4">
+
+            <div class="o-layout o-layout--justify-space-between">
+                <div class="u-hide-mobile  o-layout o-layout--align-center o-layout--justify-center u-reset-bp3  u-1-of-4 u-reset-bp3">
+                    {% if history %}
+                    <h3 class="c-card__date">{{historydata[1][0]}}
+                    {% else %}
+                    <h3 class="c-card__date">{{forecastdata[1][0]}}
+                    {% endif %}
+                    </h3>
+                </div>
+
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center   ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/temperature_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[1][1]|round(1,'floor')}}</h2>
+                    {% else %}
+                    <h2 class="c-card__text">{{forecastdata[1][2]|round(1,'floor')}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;°C</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    {% if history %}
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/humidity_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{historydata[1][2]|round}}</h2>
+                    {% else %}                    
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/rainfall_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{forecastdata[1][3]|round}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;%</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/windspeed_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[1][3]|round(1,'floor')}}</h2>
+                    {% else %}     
+                    <h2 class="c-card__text">{{forecastdata[1][4]|round(1,'floor')}}</h2>   
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;km/h</h3>
+                </div>
+            </div>
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CARD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="c-card u-1-of-5-bp4">
+
+            <div class="o-layout o-layout--justify-space-between">
+                <div class="u-hide-mobile  o-layout o-layout--align-center o-layout--justify-center u-reset-bp3  u-1-of-4 u-reset-bp3">
+                    {% if history %}
+                    <h3 class="c-card__date">{{historydata[2][0]}}
+                    {% else %}
+                    <h3 class="c-card__date">{{forecastdata[2][0]}}
+                    {% endif %}
+                    </h3>
+                </div>
+
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center   ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/temperature_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[2][1]|round(1,'floor')}}</h2>
+                    {% else %}
+                    <h2 class="c-card__text">{{forecastdata[2][2]|round(1,'floor')}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;°C</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    {% if history %}
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/humidity_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{historydata[2][2]|round}}</h2>
+                    {% else %}                    
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/rainfall_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{forecastdata[2][3]|round}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;%</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/windspeed_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[2][3]|round(1,'floor')}}</h2>
+                    {% else %}     
+                    <h2 class="c-card__text">{{forecastdata[2][4]|round(1,'floor')}}</h2>   
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;km/h</h3>
+                </div>
+            </div>
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CARD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="c-card u-1-of-5-bp4">
+
+            <div class="o-layout o-layout--justify-space-between">
+                <div class="u-hide-mobile  o-layout o-layout--align-center o-layout--justify-center u-reset-bp3  u-1-of-4 u-reset-bp3">
+                    {% if history %}
+                    <h3 class="c-card__date">{{historydata[3][0]}}
+                    {% else %}
+                    <h3 class="c-card__date">{{forecastdata[3][0]}}
+                    {% endif %}
+                    </h3>
+                </div>
+
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center   ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/temperature_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[3][1]|round(1,'floor')}}</h2>
+                    {% else %}
+                    <h2 class="c-card__text">{{forecastdata[3][2]|round(1,'floor')}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;°C</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    {% if history %}
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/humidity_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{historydata[3][2]|round}}</h2>
+                    {% else %}                    
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/rainfall_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{forecastdata[3][3]|round}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;%</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/windspeed_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[3][3]|round(1,'floor')}}</h2>
+                    {% else %}     
+                    <h2 class="c-card__text">{{forecastdata[3][4]|round(1,'floor')}}</h2>   
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;km/h</h3>
+                </div>
+            </div>
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CARD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="c-card u-1-of-5-bp4">
+
+            <div class="o-layout o-layout--justify-space-between">
+                <div class="u-hide-mobile  o-layout o-layout--align-center o-layout--justify-center u-reset-bp3  u-1-of-4 u-reset-bp3">
+                    {% if history %}
+                    <h3 class="c-card__date">{{historydata[4][0]}}
+                    {% else %}
+                    <h3 class="c-card__date">{{forecastdata[4][0]}}
+                    {% endif %}
+                    </h3>
+                </div>
+
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center   ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/temperature_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[4][1]|round(1,'floor')}}</h2>
+                    {% else %}
+                    <h2 class="c-card__text">{{forecastdata[4][2]|round(1,'floor')}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;°C</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    {% if history %}
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/humidity_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{historydata[4][2]|round}}</h2>
+                    {% else %}                    
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/rainfall_circle.svg')}} " alt=="Humidity">
+                    <h2 class="c-card__text">{{forecastdata[4][3]|round}}</h2>
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;%</h3>
+
+                </div>
+                <div class=" c-card__inner o-layout o-layout--align-center o-layout--justify-center  ">
+                    <img class="c-card__logo" src="{{ url_for('static', filename='img/svg/windspeed_circle.svg')}} " alt=="Humidity">
+                    {% if history %}
+                    <h2 class="c-card__text">{{historydata[4][3]|round(1,'floor')}}</h2>
+                    {% else %}     
+                    <h2 class="c-card__text">{{forecastdata[4][4]|round(1,'floor')}}</h2>   
+                    {% endif %}
+                    <h3 class="c-card__text">&nbsp;km/h</h3>
+                </div>
+            </div>
+        </div>
+        {% endblock %} {% block chart %}
+
+<div class="o-container">
+    <div class="o-row ">
+        <div class="c-chart__outer o-layout o-layout--justify-space-between ">
+            <div class="u-1-of-5-bp4   u-reset-bp2   o-layout o-layout--align-center o-layout--align-content-space-around " action="">
+                <div class="o-layout u-legend-alligment u-reset">
+                    <div class="o-layout">
+                        <input type="checkbox" name="toggle1" id="toggle1" onchange="toggleChart(0,0);" checked class="c-chart__legendbox regular-checkbox">
+                        <label for="toggle1" class="c-chart__legendbox">
+                        </label>
+                        <h4 class="c-chart__legendtext ">Temperatuur</h4>
+                    </div>
+                    <div class="o-layout">
+                        <input type="checkbox" name="toggle3" id="toggle3" onchange="toggleChart(2,0);" checked class="c-chart__legendbox regular-checkbox">
+                        <label for="toggle3" class="c-chart__legendbox">
+                        </label>
+                        <h4 class="c-chart__legendtext ">Windsnelheid</h4>
+                    </div>
+                    {% if history %}
+
+                    <div class="o-layout">
+                        <input type="checkbox" name="toggle2" id="toggle2" onchange="toggleChart(1,0);" checked class="c-chart__legendbox regular-checkbox">
+                        <label for="toggle2" class="c-chart__legendbox">
+                        </label>
+                        <h4 class="c-chart__legendtext ">Luchtvochtigheid</h4>
+                    </div>
+                    <div class="o-layout">
+                        <input type="checkbox" name="toggle4" id="toggle4" onchange="toggleChart(3,0);" checked class="c-chart__legendbox regular-checkbox">
+                        <label for="toggle4" class="c-chart__legendbox">
+                        </label>
+                        <h4 class="c-chart__legendtext ">UV Index</h4>
+                    </div>  
+                    {% else %}
+
+                        <div class="o-layout">
+                        <input type="checkbox" name="toggle2" id="toggle2" onchange="toggleChart(1,0);" checked class="c-chart__legendbox regular-checkbox">
+                        <label for="toggle2" class="c-chart__legendbox">
+                        </label>
+                        <h4 class="c-chart__legendtext ">Neerslag</h4>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="o-layout o-layout--align-center u-4-of-5-bp4 u-reset ">
+                <div style="height:90%; width: 100%;">
+                    <canvas id="myChart" class="chart1"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var togglecounter1 = false,
+        togglecounter2 = false,
+        togglecounter3 = false,
+        togglecounter4 = false,
+        togglecounter5 = false;
+    var togglecounterlist = {
+        togglecounter1,
+        togglecounter2,
+        togglecounter3,
+        togglecounter4,
+        togglecounter5
+    }
+    var chartname = document
+        .getElementById("myChart")
+        .className;
+    console.log(chartname)
+    var ctx = document
+        .getElementById("myChart")
+        .getContext("2d");
+    var gradientFill = ctx.createLinearGradient(0, 400, 0, 50);
+    gradientFill.addColorStop(0, "rgba(128, 182, 244, 0.3)");
+    gradientFill.addColorStop(1, "rgba(244, 144, 128, 0.3)");
+    var historydatajs = {{historydata|tojson}}
+    var forecastdatajs = {{forecastdata|tojson}}
+    console.log(historydatajs)
+
+{% if history %}
+ var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [
+                historydatajs[0][0],historydatajs[1][0],historydatajs[2][0],historydatajs[3][0],historydatajs[4][0]
+            ],
+            datasets: [{
+                label: 'Temperatuur',
+
+                data: [
+                    historydatajs[0][1],historydatajs[1][1],historydatajs[2][1],historydatajs[3][1],historydatajs[4][1]
+
+
+                ],
+                backgroundColor: 'rgba(244, 144, 128, 0.1)',
+                borderColor: ['rgba(244, 144, 128, 1)'],
+                borderWidth: 2,
+                yAxisID: 'A'
+
+            }, {
+                label: 'Luchtvochtigheid',
+                data: [
+                    historydatajs[0][2],historydatajs[1][2],historydatajs[2][2],historydatajs[3][2],historydatajs[4][2]
+
+                ],
+                backgroundColor: "rgba(128, 182, 244, 0.1)",
+                borderColor: ['rgba(128, 182, 244, 1)'],
+                borderWidth: 2,
+                yAxisID: 'B'
+            }, {
+                label: 'Windsnelheid',
+                data: [
+                    historydatajs[0][3],historydatajs[1][3],historydatajs[2][3],historydatajs[3][3],historydatajs[4][3]
+
+                ],
+                backgroundColor: 'rgba(146, 128, 244, 0.1)',
+                borderColor: ['rgba(146, 128, 244, 1)'],
+                borderWidth: 2,
+                yAxisID: 'A'
+            }, {
+                label: 'UV Index',
+                data: [
+                    historydatajs[0][4],historydatajs[1][4],historydatajs[2][4],historydatajs[3][4],historydatajs[4][4]
+
+                ],
+                backgroundColor: 'rgb(244, 232, 128,0.1)',
+                borderColor: ['rgb(244, 232, 128,1)'],
+                borderWidth: 2,
+                yAxisID: 'A'
+            }]
+        },
+        options: {
+            legend: {
+                display: true
+            },
+            tooltips: {
+                mode: 'x',
+                position: 'nearest',
+                titleFontSize: 16,
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+
+                titleFontColor: '#111',
+                bodyFontColor: '#111',
+                bodyFontSize: 14,
+                displayColors: false,
+                xPadding: 8,
+                yPadding: 8,
+
+                caretSize: 0
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    id: 'A',
+                    type: 'linear',
+                    position: 'left',
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }, {
+                    id: 'B',
+                    type: 'linear',
+                    position: 'right',
+                    ticks: {
+                        max: 0,
+                        min: 100,
+                        beginAtZero: true
+
+                    },
+                    stepSize: 10
+                }]
+            }
+        }
+    });
+   
+{% else %}
+ var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [
+                forecastdatajs[0][0],forecastdatajs[1][0],forecastdatajs[2][0],forecastdatajs[3][0],forecastdatajs[4][0]
+            ],
+            datasets: [{
+                label: 'Temperatuur',
+
+                data: [
+                        forecastdatajs[0][2],forecastdatajs[1][2],forecastdatajs[2][2],forecastdatajs[3][2],forecastdatajs[4][2]
+                ],
+                backgroundColor: 'rgba(244, 144, 128, 0.1)',
+                borderColor: ['rgba(244, 144, 128, 1)'],
+                borderWidth: 2,
+                yAxisID: 'A'
+
+            }, {
+                label: 'Neerslag',
+                data: [
+                    forecastdatajs[0][3],forecastdatajs[1][3],forecastdatajs[2][3],forecastdatajs[3][3],forecastdatajs[4][3]
+
+
+                ],
+                backgroundColor: "rgba(128, 182, 244, 0.1)",
+                borderColor: ['rgba(128, 182, 244, 1)'],
+                borderWidth: 2,
+                yAxisID: 'B'
+            }, {
+                label: 'Windsnelheid',
+                data: [
+                    forecastdatajs[0][4],forecastdatajs[1][4],forecastdatajs[2][4],forecastdatajs[3][4],forecastdatajs[4][4]
+
+                ],
+                backgroundColor: 'rgba(146, 128, 244, 0.1)',
+                borderColor: ['rgba(146, 128, 244, 1)'],
+                borderWidth: 2,
+                yAxisID: 'A'
+            }]
+        },
+        options: {
+            legend: {
+                display: true
+            },
+            tooltips: {
+                mode: 'x',
+                position: 'nearest',
+                titleFontSize: 16,
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+
+                titleFontColor: '#111',
+                bodyFontColor: '#111',
+                bodyFontSize: 14,
+                displayColors: false,
+                xPadding: 8,
+                yPadding: 8,
+
+                caretSize: 0
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    id: 'A',
+                    type: 'linear',
+                    position: 'left',
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }, {
+                    id: 'B',
+                    type: 'linear',
+                    position: 'right',
+                    ticks: {
+                        max: 0,
+                        min: 100,
+                        beginAtZero: true
+
+                    },
+                    stepSize: 10
+                }]
+            }
+        }
+    });
+   
+{% endif %}
+
+{% if history %}
+    function toggleChart(i, chartnr) {
+        console.log(i)
+        var toggle = 'togglecounter1' + (i + 1);
+        console.log(togglecounterlist[toggle])
+        togglecounterlist[toggle] = !togglecounterlist[toggle]
+        myChart
+            .getDatasetMeta(i)
+            .hidden = togglecounterlist[toggle];
+        myChart.update();
+
+    }
+{% else %}
+    function toggleChart(i, chartnr) {
+        console.log(i)
+        var toggle = 'togglecounter1' + (i + 1);
+        console.log(togglecounterlist[toggle])
+        togglecounterlist[toggle] = !togglecounterlist[toggle]
+        myChart
+            .getDatasetMeta(i)
+            .hidden = togglecounterlist[toggle];
+        myChart.update();
+
+    }
+
+{% endif %}
+</script>
+
+{% endblock %}}

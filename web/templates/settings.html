@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Settings</title>
+    <meta name="description" content="This is my HTML5 boilerplate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#4b4e6b">
+    <meta name="theme-color" content="#4b4e6b">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static',filename='site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url_for('static',filename='safari-pinned-tab.svg') }}" color="#4b4e6b">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css' )}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/screen.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg="
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+
+    <header class="o-section">
+        <div class="o-row o-layout c-header__outer-thin o-layout--justify-center">
+
+            <div class="c-header__inner o-layout o-layout--justify-center ">
+                <div class="o-layout o-layout--align-center o-layout--justify-center u-45 u-1-of-5-bp2 ">
+                    <img class="c-header__logo u-1-of-4" src="{{ url_for('static', filename='img/svg/temperature-normal.svg')}} " alt=="Temperature">
+                    <h3 class="c-header__innertext ">{{data[0]|round(1,'floor')}}°C</h3>
+                </div>
+                <div class="o-layout o-layout--align-center o-layout--justify-center u-45 u-1-of-5-bp2">
+                    <img class="c-header__logo u-1-of-4" src="{{ url_for('static', filename='img/svg/humidity-normal.svg')}} " alt=="Humidity">
+                    <h3 class="c-header__innertext ">{{data[1]|round}} %</h3>
+                </div>
+                <div class="o-layout o-layout--align-center o-layout--justify-center u-45 u-1-of-5-bp2">
+                    <img class="c-header__logo u-1-of-4" src="{{ url_for('static', filename='img/svg/wind-normal.svg')}} " alt=="Humidity">
+                    <h3 class="c-header__innertext ">{{data[2]|round(1,'floor')}} km/h</h3>
+
+                </div>
+                <div class="o-layout o-layout--align-center o-layout--justify-center u-45 u-1-of-5-bp2">
+                    <img class="c-header__logo u-1-of-4" src="{{ url_for('static', filename='img/svg/barometer-normal.svg')}} " alt=="Humidity">
+                    <h3 class="c-header__innertext ">{{data[3]|round}} mb</h3>
+                </div>
+                <div class="o-layout o-layout--align-center o-layout--justify-center u-45 u-1-of-5-bp2">
+                    <img class="c-header__logo u-1-of-4" src="{{ url_for('static', filename='img/svg/uv-normal.svg')}} " alt=="Humidity">
+                    <h3 class="c-header__innertext ">{{data[4]|round(1,'floor')}} UV</h3>
+                </div>
+                <div class="u-hide-desktop o-layout o-layout--align-center o-layout--justify-center u-45 ">
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="  o-row o-layout o-layout--justify-end ">
+        <a href="{{ url_for('index') }}">
+
+
+            <div class="c-roundedicon  ">
+                <img src="{{ url_for('static', filename='img/svg/home_icon.svg')}}" width="20px" width="20px" alt="">
+
+            </div>
+        </a>
+
+    </section>
+    <section>
+        <div class="o-row o-layout  o-layout--justify-center">
+            <div class="c-settings-block ">
+                <div class="o-layout o-layout--justify-center ">
+                    <h3>Sensor Info</h3>
+                    <div class="o-layout o-layout__item o-layout--justify-center o-layout--justify-space-evenly ">
+                        <div class="u-5-of-6 c-settings__statustext  ">
+                            <h4>Temperatuur Sensor 1</h4>
+                        </div>
+                        <div class="c-settings__statusindicator u-1-of-6">
+                            <img src="{{ url_for('static', filename='img/svg/check.svg')}}" width="20px" width="20px" alt=""> </div>
+                    </div>
+                    <div class="o-layout o-layout__item o-layout--justify-center o-layout--justify-space-evenly ">
+                        <div class="u-5-of-6 c-settings__statustext  ">
+                            <h4>Temperatuur Sensor 2</h4>
+                        </div>
+                        <div class="c-settings__statusindicator u-1-of-6">
+                            <img src="{{ url_for('static', filename='img/svg/check.svg')}}" width="20px" width="20px" alt=""> </div>
+                    </div>
+                    <div class="o-layout o-layout__item o-layout--justify-center o-layout--justify-space-evenly ">
+                        <div class="u-5-of-6 c-settings__statustext  ">
+                            <h4>Anemometer</h4>
+                        </div>
+                        <div class="c-settings__statusindicator u-1-of-6">
+                            <img src="{{ url_for('static', filename='img/svg/check.svg')}}" width="20px" width="20px" alt=""> </div>
+                    </div>
+                    <div class="o-layout o-layout__item o-layout--justify-center o-layout--justify-space-evenly ">
+                        <div class="u-5-of-6 c-settings__statustext  ">
+                            <h4>UV Sensor</h4>
+                        </div>
+                        <div class="c-settings__statusindicator u-1-of-6">
+                            <img src="{{ url_for('static', filename='img/svg/check.svg')}}" width="20px" width="20px" alt=""> </div>
+                    </div>
+                    <div class="o-layout o-layout__item o-layout--justify-center o-layout--justify-space-evenly ">
+                        <div class="u-5-of-6 c-settings__statustext  ">
+                            <h4>Luchtvochtigheid</h4>
+                        </div>
+                        <div class="c-settings__statusindicator u-1-of-6">
+                            <img src="{{ url_for('static', filename='img/svg/check.svg')}}" width="20px" width="20px" alt=""> </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="c-settings-block">
+                <form action="" method="POST">
+
+                    <div class="o-layout o-layout--justify-center ">
+
+                        <h3>Locatie Instellingen</h3>
+                        <div class="o-layout o-layout--justify-space-between" style="width: 100%">
+                            <div class="u-1-of-4-bp2 c-settings__statustext ">
+                                <label for="postcode">
+                                    <h4>Postcode</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+                                {% if settingdata[0] == None %}
+                                <input class="c-settings-input" style="width: 100px; margin-left: 35px" type="text" name="postcode" id="postcode"
+                                    value=""> {% else %}
+                                <input class="c-settings-input" style="width: 100px; margin-left: 35px" type="text" name="postcode" id="postcode"
+                                    value="{{settingdata[0]}}"> {% endif %}
+                            </div>
+                        </div>
+                        <div class="o-layout o-layout--justify-space-between" style="width: 100%">
+                            <div class="u-1-of-4-bp2 c-settings__statustext">
+                                <label for="country">
+                                    <h4>Land</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+
+                                <select id="country" style="width: 150px; margin-left: -10px" type="text" name="country"></select>
+                            </div>
+                        </div>
+
+                        <div class="o-layout o-layout--justify-space-between" style="width: 100%">
+                            <div class="u-1-of-4-bp2 c-settings__statustext ">
+                                <label for="units">
+                                    <h4>Eenheden</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2 " style=" margin-left: -20px">
+                                {% if settingdata[2] == 'kmh' %}
+                                <input type="radio" name="units" value='kmh' id="kmh" checked>km/h
+                                <input type="radio" name="units" value='mph' id="mph">mp/h {% else %}
+                                <input type="radio" name="units" value='kmh' id="kmh">km/h
+                                <input type="radio" name="units" value='mph' id="mph" checked>mp/h {% endif %}
+
+
+
+                            </div>
+                        </div>
+                        <div class="o-layout o-layout--justify-space-between" style="width: 100%">
+                            <div class="u-1-of-2 bp2 c-settings__statustext ">
+                                <label for="frequency">
+                                    <h4>Update Interval</h4>
+                                </label>
+                            </div>
+                            <div class="u-1-of-2-bp2">
+                                <input class="c-settings-input" style="width: 50px; margin-left: 35px" type="text" name="frequency" id="frequency"
+                                    value="{{settingdata[3]}}">min
+                            </div>
+                        </div>
+                        <button type="submit" name='submit' value="submit" style="margin-top: 10px;" class="c-signup-btn">Bevestigen</button>
+                    </div>
+                </form>
+
+            </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/countries.js')}}"></script>
+    <script type="text/javascript">
+        myVar = test({
+            {
+                settingdata | tojson
+            }
+        })
+        filler = countryfiller(myVar)
+    </script>
+    {% if accepted %}
+    <script>
+        window.alert('Instellingen Bewaard.')
+    </script> {% endif %}
+
+</body>

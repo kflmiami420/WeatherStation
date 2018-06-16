@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI instance to serve weatherstation web interface
+After=network.target
+BindsTo=mysqld.service
+After=mysqld.service
+
+[Service]
+User=USERNAME
+Group=www-data
+WorkingDirectory=/home/USERNAME/weatherstation/web
+ExecStart=/usr/bin/uwsgi --ini /home/USERNAME/weatherstation/conf/uwsgi-flask.ini
+
+[Install]
+WantedBy=multi-user.target

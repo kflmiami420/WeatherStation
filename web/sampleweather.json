@@ -1,0 +1,1154 @@
+{
+    "Headline": {
+        "EffectiveDate": "2018-06-13T08:00:00+02:00",
+        "EffectiveEpochDate": 1528869600,
+        "Severity": 5,
+        "Text": "Expect showers Wednesday",
+        "Category": "rain",
+        "EndDate": "2018-06-13T20:00:00+02:00",
+        "EndEpochDate": 1528912800,
+        "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/extended-weather-forecast/415379_pc?unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [{
+            "Date": "2018-06-10T07:00:00+02:00",
+            "EpochDate": 1528606800,
+            "Sun": {
+                "Rise": "2018-06-10T05:34:00+02:00",
+                "EpochRise": 1528601640,
+                "Set": "2018-06-10T21:59:00+02:00",
+                "EpochSet": 1528660740
+            },
+            "Moon": {
+                "Rise": "2018-06-10T03:58:00+02:00",
+                "EpochRise": 1528595880,
+                "Set": "2018-06-10T17:39:00+02:00",
+                "EpochSet": 1528645140,
+                "Phase": "WaningCrescent",
+                "Age": 26
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 13.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 20.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 12.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 22.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 12.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 18.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 9,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 1,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [{
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 5,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 3,
+                "IconPhrase": "Partly sunny",
+                "ShortPhrase": "Sun and some clouds",
+                "LongPhrase": "Sun and some clouds",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 2,
+                "RainProbability": 25,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 14.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 18,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 24.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 12,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 47
+            },
+            "Night": {
+                "Icon": 35,
+                "IconPhrase": "Partly cloudy",
+                "ShortPhrase": "Partly cloudy",
+                "LongPhrase": "Partly cloudy",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 8,
+                "RainProbability": 25,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 13,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 33,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 22.2,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 16,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 45
+            },
+            "Sources": ["AccuWeather"],
+            "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?unit=c&lang=en-us"
+        },
+        {
+            "Date": "2018-06-11T07:00:00+02:00",
+            "EpochDate": 1528693200,
+            "Sun": {
+                "Rise": "2018-06-11T05:34:00+02:00",
+                "EpochRise": 1528688040,
+                "Set": "2018-06-11T22:00:00+02:00",
+                "EpochSet": 1528747200
+            },
+            "Moon": {
+                "Rise": "2018-06-11T04:24:00+02:00",
+                "EpochRise": 1528683840,
+                "Set": "2018-06-11T18:56:00+02:00",
+                "EpochSet": 1528736160,
+                "Phase": "WaningCrescent",
+                "Age": 27
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 13.9,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 22.5,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 12,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 22,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 12,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 20.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 2.9,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [{
+                    "Name": "AirQuality",
+                    "Value": 75,
+                    "Category": "Moderate",
+                    "CategoryValue": 2,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 2,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 3,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 6,
+                "IconPhrase": "Mostly cloudy",
+                "ShortPhrase": "More clouds than sun",
+                "LongPhrase": "More clouds than sun",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 24,
+                "RainProbability": 25,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 18.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 44,
+                        "Localized": "NE",
+                        "English": "NE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 25.9,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 30,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 90
+            },
+            "Night": {
+                "Icon": 36,
+                "IconPhrase": "Intermittent clouds",
+                "ShortPhrase": "Partly cloudy",
+                "LongPhrase": "Partly cloudy",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 24,
+                "RainProbability": 25,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 16.7,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 37,
+                        "Localized": "NE",
+                        "English": "NE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 25.9,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 26,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 70
+            },
+            "Sources": ["AccuWeather"],
+            "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=1&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=1&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2018-06-12T07:00:00+02:00",
+            "EpochDate": 1528779600,
+            "Sun": {
+                "Rise": "2018-06-12T05:33:00+02:00",
+                "EpochRise": 1528774380,
+                "Set": "2018-06-12T22:00:00+02:00",
+                "EpochSet": 1528833600
+            },
+            "Moon": {
+                "Rise": "2018-06-12T04:56:00+02:00",
+                "EpochRise": 1528772160,
+                "Set": "2018-06-12T20:14:00+02:00",
+                "EpochSet": 1528827240,
+                "Phase": "WaningCrescent",
+                "Age": 29
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 10.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 19.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 9,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 19.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 9,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 17.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 4.9,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 3,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [{
+                    "Name": "AirQuality",
+                    "Value": 25,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 2,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 5,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 4,
+                "IconPhrase": "Intermittent clouds",
+                "ShortPhrase": "Times of clouds and sun",
+                "LongPhrase": "Intervals of clouds and sunshine; breezy in the afternoon",
+                "PrecipitationProbability": 7,
+                "ThunderstormProbability": 0,
+                "RainProbability": 7,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 22.2,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 21,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 33.3,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 8,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 70
+            },
+            "Night": {
+                "Icon": 36,
+                "IconPhrase": "Intermittent clouds",
+                "ShortPhrase": "Partly cloudy",
+                "LongPhrase": "Partly cloudy",
+                "PrecipitationProbability": 4,
+                "ThunderstormProbability": 0,
+                "RainProbability": 4,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 14.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 4,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 31.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 11,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 68
+            },
+            "Sources": ["AccuWeather"],
+            "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=2&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=2&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2018-06-13T07:00:00+02:00",
+            "EpochDate": 1528866000,
+            "Sun": {
+                "Rise": "2018-06-13T05:33:00+02:00",
+                "EpochRise": 1528860780,
+                "Set": "2018-06-13T22:01:00+02:00",
+                "EpochSet": 1528920060
+            },
+            "Moon": {
+                "Rise": "2018-06-13T05:35:00+02:00",
+                "EpochRise": 1528860900,
+                "Set": "2018-06-13T21:30:00+02:00",
+                "EpochSet": 1528918200,
+                "Phase": "New",
+                "Age": 0
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 8.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 18.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 8.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 19.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 8.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 16.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 5.9,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [{
+                    "Name": "AirQuality",
+                    "Value": 25,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 2,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 5,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 6,
+                "IconPhrase": "Mostly cloudy",
+                "ShortPhrase": "Clouds breaking, a shower",
+                "LongPhrase": "Clouds breaking for some sun, a shower in places",
+                "PrecipitationProbability": 40,
+                "ThunderstormProbability": 20,
+                "RainProbability": 40,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 16.7,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 358,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 22.2,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 3,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 1,
+                "HoursOfRain": 1,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 69
+            },
+            "Night": {
+                "Icon": 36,
+                "IconPhrase": "Intermittent clouds",
+                "ShortPhrase": "Partly cloudy",
+                "LongPhrase": "Partly cloudy",
+                "PrecipitationProbability": 1,
+                "ThunderstormProbability": 20,
+                "RainProbability": 1,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 7.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 284,
+                        "Localized": "WNW",
+                        "English": "WNW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 16.7,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 8,
+                        "Localized": "N",
+                        "English": "N"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 48
+            },
+            "Sources": ["AccuWeather"],
+            "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=3&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=3&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2018-06-14T07:00:00+02:00",
+            "EpochDate": 1528952400,
+            "Sun": {
+                "Rise": "2018-06-14T05:33:00+02:00",
+                "EpochRise": 1528947180,
+                "Set": "2018-06-14T22:01:00+02:00",
+                "EpochSet": 1529006460
+            },
+            "Moon": {
+                "Rise": "2018-06-14T06:22:00+02:00",
+                "EpochRise": 1528950120,
+                "Set": "2018-06-14T22:40:00+02:00",
+                "EpochSet": 1529008800,
+                "Phase": "WaxingCrescent",
+                "Age": 1
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 13.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 18.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 11.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 21.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 11.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 17,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 4.2,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 2,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [{
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 7,
+                    "Category": "High",
+                    "CategoryValue": 3
+                }
+            ],
+            "Day": {
+                "Icon": 14,
+                "IconPhrase": "Partly sunny w/ showers",
+                "ShortPhrase": "Spotty afternoon showers",
+                "LongPhrase": "Times of clouds and sun, a couple of showers in the afternoon",
+                "PrecipitationProbability": 60,
+                "ThunderstormProbability": 20,
+                "RainProbability": 60,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 14.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 240,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 272,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 1,
+                "HoursOfRain": 1,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 70
+            },
+            "Night": {
+                "Icon": 12,
+                "IconPhrase": "Showers",
+                "ShortPhrase": "Rain and drizzle early",
+                "LongPhrase": "Cloudy; occasional rain and drizzle in the evening, then a shower in spots",
+                "PrecipitationProbability": 58,
+                "ThunderstormProbability": 20,
+                "RainProbability": 58,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 9.3,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 239,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 276,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 2.5,
+                "HoursOfRain": 2.5,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 98
+            },
+            "Sources": ["AccuWeather"],
+            "MobileLink": "http://m.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=4&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/be/kortrijk/8500/daily-weather-forecast/415379_pc?day=4&unit=c&lang=en-us"
+        }
+    ]
+}

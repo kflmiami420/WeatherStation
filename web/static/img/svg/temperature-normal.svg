@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.777 31.7">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="temperature-normal" transform="translate(-486.008 -98.912)">
+    <path id="Path_37" data-name="Path 37" class="cls-1" d="M489.251,104.309c.072,1.081,0,13.552,0,13.552a6.42,6.42,0,0,0-2.235,5.19,7,7,0,0,0,7.281,6.56,6.617,6.617,0,0,0,6.488-6.56c0-2.667-2.379-5.19-2.379-5.19V104.309s-.288-4.4-4.109-4.4A4.857,4.857,0,0,0,489.251,104.309Z"/>
+    <path id="Path_38" data-name="Path 38" class="cls-1" d="M493.9,112.383v10.6"/>
+    <g id="Ellipse_9" data-name="Ellipse 9" class="cls-2" transform="translate(491 120)">
+      <circle class="cls-3" cx="3" cy="3" r="3"/>
+      <circle class="cls-4" cx="3" cy="3" r="2.5"/>
+    </g>
+  </g>
+</svg>

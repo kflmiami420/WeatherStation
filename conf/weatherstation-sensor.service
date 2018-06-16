@@ -1,0 +1,14 @@
+[Unit]
+Description=Project 1 sensor service
+After=network.target
+BindsTo=mysqld.service
+After=mysqld.service
+
+[Service]
+User=USERNAME
+Group=USERNAME
+WorkingDirectory=/home/USERNAME/weatherstation/sensor
+ExecStart=/home/USERNAME/weatherstation/env/bin/python /home/USERNAME/weatherstation/sensor/sensor.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,14 +1,16 @@
 import logging
+# import signal
 from time import sleep
 import mysql.connector as mariadb
 from ADAFRUIT_BME280_LIBRARY import *
+import time
 import SI1145
 import MCP3008
 import MyPyDHT
 
 
 log = logging.getLogger(__name__)
-logging.basicConfig(filename='main.log', level=logging.DEBUG)
+logging.basicConfig(filename='example.log', level=logging.DEBUG)
 running = True
 sensor_temp_pressure = BME280(t_mode=BME280_OSAMPLE_8,
                               p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
@@ -17,7 +19,8 @@ mcp = MCP3008.MCP3008()
 
 
 def get_data(sql, params=None):
-    conn = mariadb.connect(database='project1', user='project1-sensor', password='sensorpassword')
+    conn = mariadb.connect(database='project1',
+                           user='project1-sensor', password='sensorpassword')
     cursor = conn.cursor()
     records = []
 
@@ -29,7 +32,7 @@ def get_data(sql, params=None):
             records.append(list(row))
 
     except Exception as e:
-        log.exception("Error while fetching data: {0})".format(e))
+        log.exception("Fout bij het ophalen van data: {0})".format(e))
 
     cursor.close()
     conn.close()
@@ -77,3 +80,15 @@ def loop():
                       hectopascals, uvIndex, windspeed)
 
     sleep(int(interval)*60)
+
+
+# if __name__ == '__main__':
+#     logging.basicConfig(level=logging.DEBUG)
+#     try:
+#         setup()
+#         log.debug('SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS')
+
+#         while running:
+#             loop()
+#     except KeyboardInterrupt:
+#         pass
