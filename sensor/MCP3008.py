@@ -3,22 +3,7 @@ from spidev import SpiDev
 import time
 
 
-# # 3) Testapplicatie
-# def read_trimmer(device=0):
-#     """Read a value from CH0 on MCP3008 slave <device> and print it to console.
-#     :param device: SPI slave (SS/CE/CS: 0 or 1 for standard RPi 3)
-#     """
-#     spi = SpiDev()
-#     spi.open(0, 0)
-#     spi.max_speed_hz = 100000
-#     cb = [0x01, 0x80, 0x00]
-#     bytes_in = spi.xfer2(cb)
-#     B9B8 = (bytes_in[1] & 0x03) << 8
-#     byte = B9B8 | bytes_in[2]
-#     return byte
-
-
-# 4) Converting values
+# 1) Converting values
 def value_to_volts(value):
     """Convert a 10-bit measurement to an analog voltage
     :param value: ADC measurement (0-1023)
@@ -34,17 +19,16 @@ def value_to_percent(value):
     :param value: ADC measurement (0-1023)
     :return: Percentage with 1 decimal (0.0 - 100.0)
     """
-    returnValue = value / 1023 * 100.0
+    returnValue = ((value / 1023)-0.381) * 100.0
 
     return round(returnValue, 1)
 
 
 def value_to_kmh(value):
-    returnValue = (value / 1023 * 3.3 - 0.4) / \
-        0.0171467764060357 - 1.12
+    returnValue = (value_to_volts(value)-0.39)*32.4*3.6
     return returnValue
 
-# 5) Class for the ADC
+# 2) Class for the ADC
 
 
 class MCP3008:
@@ -75,24 +59,6 @@ class MCP3008:
         B9B8 = (bytes_in[1] & 0x03) << 8
         byte = B9B8 | bytes_in[2]
         return byte
-
-
-# def main():
-#     GPIO.setmode(GPIO.BCM)
-#     try:
-#         while True:
-#             mcp = MCP3008()
-#             print(mcp.read_channel(0))
-#             time.sleep(0.5)
-#             print(value_to_volts(mcp.read_channel(0)))
-#         # print(read_trimmer())
-
-#     except KeyboardInterrupt:
-#         pass
-#     finally:
-#         # get rid of warning when no GPIO pins set up
-#         GPIO.setwarnings(False)
-#         GPIO.cleanup()
 
 
 if __name__ == '__main__':
